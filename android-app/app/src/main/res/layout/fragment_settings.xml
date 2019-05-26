@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/view" android:paddingBottom="55dp" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="?attr/colorPrimary" android:elevation="5dp" android:minHeight="?attr/actionBarSize" app:titleTextColor="@android:color/white">
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" 
+            xmlns:card_view="http://schemas.android.com/apk/res-auto" android:id="@+id/card_view" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:cardBackgroundColor="@color/colorPrimaryDark" card_view:cardCornerRadius="5dp" card_view:cardElevation="5dp" card_view:cardUseCompatPadding="true">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_top_down_component" android:orientation="vertical">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginLeft="@dimen/margin_right_left_cardList" android:layout_marginRight="@dimen/margin_right_left_cardList" android:layout_marginTop="@dimen/margin_top_down_component" android:text="Notification" android:textColor="@color/colorAccent" />
+
+                <Switch android:id="@+id/notification_switch" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginLeft="@dimen/margin_right_left_cardList" android:layout_marginRight="@dimen/margin_right_left_cardList" android:layout_marginTop="@dimen/margin_top_down_component" android:drawableLeft="@drawable/ic_notifications_white_24dp" android:drawablePadding="@dimen/margin_right_left" android:text="Enable notification" android:textColor="@android:color/white" android:textSize="18dp" />
+
+                <TextView android:id="@+id/tv_Settings" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginLeft="@dimen/margin_right_left_cardList" android:layout_marginRight="@dimen/margin_right_left_cardList" android:layout_marginTop="@dimen/margin_top_down_component" android:text="Settings" android:textColor="@color/colorAccent" />
+
+                <TextView android:id="@+id/btn_pref" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginLeft="@dimen/margin_right_left_cardList" android:layout_marginRight="@dimen/margin_right_left_cardList" android:layout_marginTop="@dimen/margin_top_down_component" android:drawableLeft="@drawable/ic_filter_outline_white_24dp" android:drawablePadding="@dimen/margin_right_left" android:text="Select filters" android:textColor="@android:color/white" android:textSize="18dp" />
+
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/margin_top_down_component" android:layout_marginRight="@dimen/margin_top_down_component" android:layout_marginTop="@dimen/margin_top_down_component" android:background="@android:color/white" />
+
+                <TextView android:id="@+id/btn_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginLeft="@dimen/margin_right_left_cardList" android:layout_marginRight="@dimen/margin_right_left_cardList" android:layout_marginTop="@dimen/margin_top_down_component" android:drawableLeft="@drawable/ic_timelapse_white_24dp" android:drawablePadding="@dimen/margin_right_left" android:text="Select time" android:textColor="@android:color/white" android:textSize="18dp" />
+
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/margin_top_down_component" android:layout_marginRight="@dimen/margin_top_down_component" android:layout_marginTop="@dimen/margin_top_down_component" android:background="@android:color/white" />
+
+                <TextView android:id="@+id/btn_distance" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginLeft="@dimen/margin_right_left_cardList" android:layout_marginRight="@dimen/margin_right_left_cardList" android:layout_marginTop="@dimen/margin_top_down_component" android:drawableLeft="@drawable/ic_map_marker_radius_white_24dp" android:drawablePadding="@dimen/margin_right_left" android:text="Select distance" android:textColor="@android:color/white" android:textSize="18dp" />
+
+                <TextView android:id="@+id/tv_account" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginLeft="@dimen/margin_right_left_cardList" android:layout_marginRight="@dimen/margin_right_left_cardList" android:layout_marginTop="@dimen/margin_top_down_layout" android:text="Account" android:textColor="@color/colorAccent" />
+
+                <TextView android:id="@+id/btn_delete_account" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginLeft="@dimen/margin_right_left_cardList" android:layout_marginRight="@dimen/margin_right_left_cardList" android:layout_marginTop="@dimen/margin_top_down_component" android:drawableLeft="@drawable/ic_account_remove_white_24dp" android:drawablePadding="@dimen/margin_right_left" android:text="Delete account" android:textColor="@android:color/white" android:textSize="18dp" />
+
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/margin_top_down_component" android:layout_marginRight="@dimen/margin_top_down_component" android:layout_marginTop="@dimen/margin_top_down_component" android:background="@android:color/white" />
+
+                <TextView android:id="@+id/btn_change_pass" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginLeft="@dimen/margin_right_left_cardList" android:layout_marginRight="@dimen/margin_right_left_cardList" android:layout_marginTop="@dimen/margin_top_down_component" android:drawableLeft="@drawable/ic_lock_reset_white_24dp" android:drawablePadding="@dimen/margin_right_left" android:text="Change password" android:textColor="@android:color/white" android:textSize="18dp" />
+
+                <View android:id="@+id/view4" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/margin_top_down_component" android:layout_marginRight="@dimen/margin_top_down_component" android:layout_marginTop="@dimen/margin_top_down_component" android:background="@android:color/white" />
+
+                <TextView android:id="@+id/btn_logout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginLeft="@dimen/margin_right_left_cardList" android:layout_marginRight="@dimen/margin_right_left_cardList" android:layout_marginTop="@dimen/margin_top_down_component" android:drawableLeft="@drawable/ic_logout_variant_white_24dp" android:drawablePadding="@dimen/margin_right_left" android:text="Logout" android:textColor="@android:color/white" android:textSize="18dp" />
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </ScrollView>
+
+
+</LinearLayout>

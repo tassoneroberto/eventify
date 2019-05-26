@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/addeventmenu" android:checked="false" android:icon="@drawable/ic_add_white_24dp" android:title="Create new event" />
+        <item android:id="@+id/share_all" android:checked="false" android:icon="@drawable/ic_share_flat_white_24dp" android:title="Share all events" />
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/delete_account" android:checked="false" android:icon="@drawable/ic_account_remove_white_24dp" android:title="Delete Account" />
+
+        <item android:id="@+id/change_pass" android:checked="false" android:icon="@drawable/ic_lock_reset_white_24dp" android:title="Change Password" />
+
+        <item android:id="@+id/logout" android:checked="false" android:icon="@drawable/ic_logout_variant_white_24dp" android:title="Logout"/>
+
+
+    </group>
+</menu>

@@ -1,0 +1,51 @@
+{
+  "project_info": {
+    "project_number": "1062816213410",
+    "project_id": "firebase-eventify"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1062816213410:android:292a83e46a4e771a",
+        "android_client_info": {
+          "package_name": "com.company.eventify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1062816213410-gkcq4ehids9lppa8fmkd45lvi9khi9hg.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1062816213410-apb598u8sma3k1coss5ia7cdc60cmhdd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.company.eventify",
+            "certificate_hash": "929afc077f9009d236565bb0419917282ede2817"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGJKdhzdD_-4VROfgJ0FmJ5fWy_jEkz0Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-96367557-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

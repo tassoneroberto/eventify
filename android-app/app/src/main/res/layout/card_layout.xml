@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:card_view="http://schemas.android.com/apk/res-auto" android:id="@+id/card_view" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:cardCornerRadius="5dp" card_view:cardElevation="5dp" card_view:cardUseCompatPadding="true">
+
+
+    <LinearLayout android:id="@+id/card_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/colorPrimaryDark" android:orientation="vertical">
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+            <ImageView android:id="@+id/image_card" android:layout_width="match_parent" android:layout_height="130dp" android:scaleType="fitXY" android:src="@drawable/sample" />
+
+        </RelativeLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/margin_top_down_component" android:layout_marginRight="@dimen/margin_top_down_component" android:layout_marginTop="@dimen/margin_top_down_component" android:orientation="vertical">
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal">
+
+                <TextView android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" android:text="Title" android:textColor="#FFFF" android:textSize="20dp" android:textStyle="normal|bold" />
+
+                <ImageButton android:id="@+id/share_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:background="@null" android:elevation="5dp" android:src="@drawable/ic_share_flat_white_24dp" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="right" android:orientation="horizontal">
+
+                <TextView android:id="@+id/organizer_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_top_down_component" android:layout_weight="1" android:drawableLeft="@drawable/ic_domain_white_24dp" android:drawablePadding="@dimen/margin_top_down_component" android:text="Organizer" android:textColor="#FFFF" android:textSize="18sp" />
+
+                <ImageButton android:id="@+id/fb_btn" android:layout_width="24dp" android:layout_height="24dp" android:layout_alignParentRight="true" android:layout_gravity="center_vertical" android:background="@drawable/face" android:elevation="5dp" />
+            </LinearLayout>
+
+
+            <LinearLayout android:id="@+id/linearLayoutDetails" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:visibility="gone">
+
+                <TextView android:id="@+id/time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_top_down_component" android:drawableLeft="@drawable/ic_date_range_white_24dp" android:drawablePadding="@dimen/margin_top_down_component" android:gravity="center_vertical" android:text="Date - Time" android:textColor="#FFFF" />
+
+                <TextView android:id="@+id/place" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_top_down_component" android:drawableLeft="@drawable/ic_place_white_24dp" android:text="Place" android:textColor="#FFFF" />
+
+                <TextView android:id="@+id/phone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_top_down_component" android:drawableLeft="@drawable/ic_phone_white_24dp" android:drawablePadding="@dimen/margin_top_down_component" android:text="Phone" android:textColor="#FFFF" />
+
+                <TextView android:id="@+id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_top_down_component" android:text="[No description]" android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/margin_top_down_component" android:background="@android:color/white" />
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_right_left_cardList" android:layout_marginRight="@dimen/margin_right_left_cardList" android:orientation="horizontal">
+
+                <Button android:id="@+id/btn_remove" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:background="#0000" android:gravity="center_vertical" android:text="REMOVE" android:textColor="@color/colorAccent" android:visibility="gone" />
+
+                <Button android:id="@+id/btn_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:background="#0000" android:gravity="center_vertical" android:text="ADD " android:textColor="@color/colorAccent" android:visibility="gone" />
+
+                <Button android:id="@+id/btn_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:background="#0000" android:gravity="center_vertical" android:text="EDIT " android:textColor="@color/colorAccent" android:visibility="gone" />
+
+                <Button android:id="@+id/btn_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:background="#0000" android:gravity="center_vertical" android:text="DELETE " android:textColor="@color/colorAccent" android:visibility="gone" />
+
+                <Button android:id="@+id/space" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:layout_weight="1" android:background="#0000" android:gravity="center_vertical" android:textColor="@color/colorAccent" />
+
+                <ImageView android:id="@+id/imageViewExpand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:background="@android:color/transparent" android:contentDescription="Details" android:src="@drawable/ic_expand_more_white_24dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+

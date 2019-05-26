@@ -1,0 +1,9 @@
+<tabs>
+    <tab icon="@drawable/ic_home_black_24dp" id="@+id/tab_home" title="Home" />
+    <tab icon="@drawable/ic_explore_black_24dp" id="@+id/tab_near" title="Near by" />
+    <tab icon="@drawable/ic_event_black_24dp" id="@+id/tab_calendar" title="Calendar" />
+
+
+    <tab icon="@drawable/ic_search_white_24dp" id="@+id/tab_search" title="Search" />
+    <tab icon="@drawable/ic_settings_white_24dp" id="@+id/tab_settings" title="Settings" />
+</tabs>

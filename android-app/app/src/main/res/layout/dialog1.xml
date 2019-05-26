@@ -1,0 +1,9 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="wrap_content" android:background="@color/colorPrimaryDark" android:orientation="vertical" android:minWidth="340dp" android:layout_width="300dp">
+
+    <TextView android:id="@+id/label_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginBottom="@dimen/margin_top_down_layout" android:layout_marginLeft="@dimen/margin_top_down_layout" android:layout_marginRight="@dimen/margin_top_down_layout" android:text="Day" android:textColor="@color/colorAccent" android:textSize="18sp" android:textAlignment="center" />
+
+    <SeekBar style="@style/Widget.AppCompat.SeekBar.Discrete" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_top_down_layout" android:layout_marginBottom="24dp" android:layout_marginLeft="@dimen/margin_top_down_layout" android:layout_marginRight="@dimen/margin_top_down_layout" android:max="5" android:progress="3" android:thumb="@drawable/ic_timelapse_white_24dp" android:id="@+id/seekbar" />
+
+
+</LinearLayout>
+

@@ -1,0 +1,8 @@
+<tabs>
+    <tab id="@+id/tab_home" icon="@drawable/ic_home_black_24dp" title="Owner" />
+    <tab id="@+id/tab_followed" icon="@drawable/ic_stars_black_24dp" title="Co-Owner" />
+
+    <tab id="@+id/tab_invitations" icon="@drawable/ic_message_black_24dp" title="Request" />
+
+
+</tabs>

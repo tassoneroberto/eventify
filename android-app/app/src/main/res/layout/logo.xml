@@ -1,0 +1,4 @@
+<merge>
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android" android:paddingTop="20dp" android:id="@+id/tv_eventify" android:text="@string/app_name" android:textColor="@color/colorAccent" android:textSize="22sp" android:textAlignment="center" android:layout_marginBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="top" />
+</merge>

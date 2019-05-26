@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/logout" android:title="Logout" />
+
+    <item android:id="@+id/change_pass" android:title="Change password" />
+
+    <item android:id="@+id/delete_account" android:title="Delete account" />
+
+
+
+</menu>
