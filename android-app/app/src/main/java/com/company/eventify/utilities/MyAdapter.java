@@ -1,11 +1,7 @@
 package com.company.eventify.utilities;
 
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.ViewGroup;
-
-/**
- * Created by marco on 23/03/2017.
- */
 
 public class MyAdapter extends RecyclerView.Adapter {
 

@@ -6,17 +6,17 @@
 
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:layout_weight="1" android:orientation="vertical">
 
-            <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginTop="@dimen/margin_top_down_component">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginTop="@dimen/margin_top_down_component">
 
                 <EditText android:id="@+id/et_email" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_email_black_24dp" android:hint="Email" android:inputType="textEmailAddress" />
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginTop="@dimen/margin_top_down_component">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginTop="@dimen/margin_top_down_component">
 
                 <EditText android:id="@+id/et_password" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_key_variant_black_24dp" android:hint="Password" android:inputType="textPassword" />
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
             <Button android:id="@+id/btn_login" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:textColor="@color/white" android:textSize="14sp" android:text="LOGIN"/>
 
@@ -34,8 +34,6 @@
 
                 <com.shaishavgandhi.loginbuttons.TwitterButton android:id="@+id/login_twitter" android:layout_width="75dp" android:layout_height="75dp" android:layout_marginLeft="@dimen/margin_right_left_cardList" android:layout_marginRight="@dimen/margin_right_left_cardList" app:iconSize="30dp" app:roundedCorner="true" app:roundedCornerRadius="75dp" />
 
-                <com.shaishavgandhi.loginbuttons.GooglePlusButton android:id="@+id/login_google" android:layout_width="75dp" android:layout_height="75dp" android:layout_marginLeft="@dimen/margin_right_left_cardList" android:layout_marginRight="@dimen/margin_right_left_cardList" app:iconSize="30dp" app:roundedCorner="true" app:roundedCornerRadius="75dp" />
-
             </LinearLayout>
 
         </LinearLayout>
@@ -48,9 +46,9 @@
 
         <TextView android:id="@+id/tv_register_user" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginTop="1dp" android:text="Not registered? Register an account now!" android:textAlignment="center" android:textColor="@color/colorAccent" />
 
-        <android.support.v7.widget.AppCompatButton android:id="@+id/btn_register_user" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="1dp" android:layout_marginTop="@dimen/margin_top_down_component" android:background="@color/colorPrimary" android:text="REGISTER AS USER" android:textColor="@android:color/white" />
+        <androidx.appcompat.widget.AppCompatButton android:id="@+id/btn_register_user" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="1dp" android:layout_marginTop="@dimen/margin_top_down_component" android:background="@color/colorPrimary" android:text="REGISTER AS USER" android:textColor="@android:color/white" />
 
-        <android.support.v7.widget.AppCompatButton android:id="@+id/btn_register_organizer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="1dp" android:layout_marginTop="@dimen/margin_top_down_component" android:background="@color/colorPrimary" android:text="REGISTER AS ORGANIZER" android:textColor="@android:color/white" />
+        <androidx.appcompat.widget.AppCompatButton android:id="@+id/btn_register_organizer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="1dp" android:layout_marginTop="@dimen/margin_top_down_component" android:background="@color/colorPrimary" android:text="REGISTER AS ORGANIZER" android:textColor="@android:color/white" />
 
 
     </LinearLayout>

@@ -5,3 +5,4 @@ android-app/.idea/caches/gradle_models.ser
 android-app/.idea/libraries
 android-app/.gradle/
 android-app/app/build
+android-app/local.properties

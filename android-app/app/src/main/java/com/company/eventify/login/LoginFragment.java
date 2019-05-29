@@ -6,8 +6,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.design.widget.Snackbar;
+import androidx.annotation.NonNull;
+import com.google.android.material.snackbar.Snackbar;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -52,7 +52,6 @@ import com.google.android.gms.common.api.Status;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.shaishavgandhi.loginbuttons.FacebookButton;
-import com.shaishavgandhi.loginbuttons.GooglePlusButton;
 import com.shaishavgandhi.loginbuttons.TwitterButton;
 import com.twitter.sdk.android.Twitter;
 import com.twitter.sdk.android.core.Result;
@@ -94,7 +93,6 @@ public class LoginFragment extends Fragment
     private Button btn_register_user, btn_register_organizer;
     private LoginButton login_face;
     private FacebookButton face;
-    private GooglePlusButton login_google;
     private TwitterButton twitter;
     private SharedPreferences pref;
     private boolean click = false;
@@ -135,8 +133,6 @@ public class LoginFragment extends Fragment
         face = view.findViewById(R.id.login_face);
         login_face.setVisibility(View.GONE);
         face.setOnClickListener(this);
-        login_google = view.findViewById(R.id.login_google);
-        login_google.setOnClickListener(this);
         twitter = view.findViewById(R.id.login_twitter);
         twitter.setOnClickListener(this);
         gso = ((MainActivity) getActivity()).getGso();
@@ -266,9 +262,6 @@ public class LoginFragment extends Fragment
 
         case R.id.login_face:
             login_face.callOnClick();
-            break;
-        case R.id.login_google:
-            signIn();
             break;
         case R.id.login_twitter:
             loginButton.performClick();

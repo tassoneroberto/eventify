@@ -1,18 +1,14 @@
 package com.company.eventify.utilities;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
 
 import com.company.eventify.user.UserFragmentCalendar;
 import com.company.eventify.user.UserFragmentHome;
 import com.company.eventify.user.UserFragmentNear;
 import com.company.eventify.user.UserFragmentSearch;
 import com.company.eventify.user.UserFragmentSettings;
-
-/**
- * Created by marco on 23/03/2017.
- */
 
 public class MyPagerAdapter extends FragmentStatePagerAdapter {
     public MyPagerAdapter(FragmentManager fm) {

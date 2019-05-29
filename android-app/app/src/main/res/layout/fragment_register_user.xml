@@ -9,42 +9,42 @@
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:layout_weight="1" android:orientation="vertical">
 
 
-            <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginTop="@dimen/margin_top_down_component">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginTop="@dimen/margin_top_down_component">
 
                 <EditText android:id="@+id/et_firstname" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_face_black_24dp" android:hint="First name" android:inputType="textPersonName" />
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginTop="@dimen/margin_top_down_component">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginTop="@dimen/margin_top_down_component">
 
                 <EditText android:id="@+id/et_lastname" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_face_black_24dp" android:hint="Last name" android:inputType="textPersonName" />
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginTop="@dimen/margin_top_down_component">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginTop="@dimen/margin_top_down_component">
 
                 <EditText android:id="@+id/et_email" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_email_black_24dp" android:hint="Email" android:inputType="textEmailAddress" />
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginTop="@dimen/margin_top_down_component">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginTop="@dimen/margin_top_down_component">
 
                 <EditText android:id="@+id/et_password" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_key_variant_black_24dp" android:hint="Password" android:inputType="textPassword" />
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginTop="@dimen/margin_top_down_component">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginTop="@dimen/margin_top_down_component">
 
                 <EditText android:id="@+id/et_repeat_password" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_key_variant_black_24dp" android:hint="Repeat password" android:inputType="textPassword" />
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
         </LinearLayout>
     </ScrollView>
 
     <LinearLayout android:id="@id/lll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:orientation="vertical">
 
-        <android.support.v7.widget.AppCompatButton android:id="@+id/btn_register" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/colorPrimary" android:text="Register" android:textColor="@android:color/white" />
+        <androidx.appcompat.widget.AppCompatButton android:id="@+id/btn_register" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/colorPrimary" android:text="Register" android:textColor="@android:color/white" />
 
         <TextView android:id="@+id/tv_login" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginTop="@dimen/margin_top_down_component" android:text="Already Registered ? Login Now !" android:textAlignment="center" android:textColor="@color/colorAccent" />
 

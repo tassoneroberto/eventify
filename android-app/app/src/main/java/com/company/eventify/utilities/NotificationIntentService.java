@@ -6,8 +6,8 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v4.app.NotificationCompat;
-import android.support.v4.content.WakefulBroadcastReceiver;
+import androidx.core.app.NotificationCompat;
+import androidx.legacy.content.WakefulBroadcastReceiver;
 import android.util.Log;
 
 import com.company.eventify.MainActivity;
@@ -148,7 +148,7 @@ public class NotificationIntentService extends IntentService {
                     final NotificationCompat.Builder builder = new NotificationCompat.Builder(this);
                     builder.setContentTitle(e.getTitle()).setAutoCancel(true)
                             .setContentText("This event is close!! Check your Calendar ")
-                            .setSmallIcon(R.drawable.cast_ic_notification_1);
+                            .setSmallIcon(R.drawable.cast_ic_notification_0);
 
                     PendingIntent pendingIntent = PendingIntent.getActivity(this, NOTIFICATION_ID,
                             new Intent(this, MainActivity.class), PendingIntent.FLAG_UPDATE_CURRENT);

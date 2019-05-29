@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class Constants {
 
-    public static final String API_URL = "http://apisocialevent.altervista.org/";
+    public static final String API_URL = "https://apisocialevent.altervista.org/";
     public static final String API_KEY = "aEk027VIhPUc79SHLHq6zyUUpCDTZgsm";
     // Login/Registration operations
     public static final String REGISTER_USER = "registerUser";

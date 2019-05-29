@@ -2,7 +2,7 @@ package com.company.eventify.utilities;
 
 import android.content.Intent;
 import android.graphics.Paint;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,9 +20,6 @@ import com.company.eventify.user.UserActivity;
 
 import java.util.List;
 
-/**
- * Created by Rack on 15/12/2016.
- */
 public class EventAdapter extends RecyclerView.Adapter<EventAdapter.EventViewHolder> {
 
     private List<Event> eventList;

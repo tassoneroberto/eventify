@@ -1,13 +1,9 @@
 package com.company.eventify.utilities;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import java.io.Serializable;
 import java.util.StringTokenizer;
-
-/**
- * Created by Rack on 15/12/2016.
- */
 
 public class Event implements Serializable, Comparable {
     private String id;

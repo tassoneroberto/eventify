@@ -1,15 +1,15 @@
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_content" android:layout_width="match_parent" android:layout_height="match_parent">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
         xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/ll" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
 
-        <android.support.v7.widget.Toolbar android:id="@+id/toolbar_search" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="?attr/colorPrimary" android:elevation="5dp" android:minHeight="?attr/actionBarSize" app:subtitleTextColor="@android:color/white" app:theme="@style/ToolbarStyle" app:titleTextColor="@android:color/white">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar_search" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="?attr/colorPrimary" android:elevation="5dp" android:minHeight="?attr/actionBarSize" app:subtitleTextColor="@android:color/white" app:theme="@style/ToolbarStyle" app:titleTextColor="@android:color/white">
 
-            <android.support.v7.widget.SearchView android:id="@+id/search_view" android:layout_width="match_parent" android:layout_height="match_parent" android:icon="@drawable/ic_search_white_24dp" android:textColorHint="@color/colorPrimaryLight" android:theme="@style/ToolbarStyle" android:title="Search" app:defaultQueryHint="Search event or organizer" app:queryHint="Search event or organizer" app:showAsAction="always|collapseActionView" />
-        </android.support.v7.widget.Toolbar>
+            <androidx.appcompat.widget.SearchView android:id="@+id/search_view" android:layout_width="match_parent" android:layout_height="match_parent" android:icon="@drawable/ic_search_white_24dp" android:textColorHint="@color/colorPrimaryLight" android:theme="@style/ToolbarStyle" android:title="Search" app:defaultQueryHint="Search event or organizer" app:queryHint="Search event or organizer" app:showAsAction="always|collapseActionView" />
+        </androidx.appcompat.widget.Toolbar>
 
-        <android.support.v7.widget.RecyclerView android:id="@+id/cardList" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/margin_right_left_cardList" android:layout_marginRight="@dimen/margin_right_left_cardList" android:clipToPadding="false" android:paddingBottom="76dp" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/cardList" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/margin_right_left_cardList" android:layout_marginRight="@dimen/margin_right_left_cardList" android:clipToPadding="false" android:paddingBottom="76dp" />
     </LinearLayout>
 
-</android.support.design.widget.CoordinatorLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

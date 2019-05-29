@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:id="@+id/layout_create_event" android:layout_width="match_parent" android:layout_height="match_parent" android:fitsSystemWindows="true" tools:context=".MainActivity">
 
     <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:src="@drawable/bu" />
@@ -7,86 +7,86 @@
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
         xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
 
-        <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="?attr/colorPrimary" android:minHeight="?attr/actionBarSize" />
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="?attr/colorPrimary" android:minHeight="?attr/actionBarSize" />
 
-        <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/colorPrimary" android:textColorHint="@android:color/white">
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/colorPrimary" android:textColorHint="@android:color/white">
 
-            <EditText android:id="@+id/et_title" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="40dp" android:layout_marginLeft="40dp" android:layout_marginRight="40dp" android:layout_marginTop="40dp" android:backgroundTint="@android:color/white" android:hint="Title" android:inputType="text" android:textColor="@android:color/white" android:textColorHint="@android:color/white" android:textSize="32dp" />
+            <EditText android:id="@+id/et_title" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="40dp" android:layout_marginLeft="40dp" android:layout_marginRight="40dp" android:layout_marginTop="40dp" android:hint="Title" android:inputType="text" android:textColor="@android:color/white" android:textColorHint="@android:color/white" android:textSize="32dp" />
 
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_layout" android:layout_marginLeft="@dimen/margin_right_left" android:layout_marginRight="@dimen/margin_right_left" android:layout_marginTop="@dimen/margin_top_down_layout" android:layout_weight="1">
 
             <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
 
 
-                <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:layout_marginTop="8dp">
+                <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:layout_marginTop="8dp">
 
                     <EditText android:id="@+id/et_category" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_label_outline_black_24dp" android:hint="Event category" android:inputType="text" />
 
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
-                <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:layout_marginTop="8dp">
+                <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:layout_marginTop="8dp">
 
                     <EditText android:id="@+id/et_location" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_location_on_black_24dp" android:hint="Location" android:inputType="text|phone" />
 
 
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
-                <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="8dp" android:layout_marginTop="8dp">
+                <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="8dp" android:layout_marginTop="8dp">
 
                     <EditText android:id="@+id/et_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_description_black_24dp" android:hint="Description" android:inputType="textMultiLine" />
 
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal">
 
-                    <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="8dp" android:layout_marginTop="8dp" android:layout_weight="1">
+                    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="8dp" android:layout_marginTop="8dp" android:layout_weight="1">
 
                         <EditText android:id="@+id/et_opening" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_today_black_24dp" android:hint="Start date" android:inputType="text" />
 
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
-                    <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="8dp" android:layout_marginTop="8dp" android:layout_weight="1">
+                    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="8dp" android:layout_marginTop="8dp" android:layout_weight="1">
 
                         <EditText android:id="@+id/et_opening_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_access_time_black_24dp" android:hint="Start time" android:inputType="text" />
 
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                 </LinearLayout>
 
                 <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal">
 
-                    <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="8dp" android:layout_marginTop="8dp" android:layout_weight="1">
+                    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="8dp" android:layout_marginTop="8dp" android:layout_weight="1">
 
                         <EditText android:id="@+id/et_ending" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_today_black_24dp" android:hint="End date" android:inputType="text" />
 
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
-                    <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="8dp" android:layout_marginTop="8dp" android:layout_weight="1">
+                    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="8dp" android:layout_marginTop="8dp" android:layout_weight="1">
 
                         <EditText android:id="@+id/et_ending_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_access_time_black_24dp" android:hint="End time" android:inputType="text" />
 
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                 </LinearLayout>
 
 
-                <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginTop="@dimen/margin_top_down_component">
+                <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginTop="@dimen/margin_top_down_component">
 
                     <EditText android:id="@+id/et_tag1" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_label_outline_black_24dp" android:hint="Tags" android:inputType="text|textMultiLine" />
 
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
         </ScrollView>
 
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_layout" android:layout_marginLeft="@dimen/margin_right_left" android:layout_marginRight="@dimen/margin_right_left" android:layout_marginTop="@dimen/margin_top_down_layout" android:gravity="bottom" android:orientation="vertical">
 
-            <android.support.v7.widget.AppCompatButton android:id="@+id/btn_create" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginTop="@dimen/margin_top_down_component" android:background="@color/colorPrimary" android:text="Create" android:textColor="@android:color/white" />
+            <androidx.appcompat.widget.AppCompatButton android:id="@+id/btn_create" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginTop="@dimen/margin_top_down_component" android:background="@color/colorPrimary" android:text="Create" android:textColor="@android:color/white" />
 
             <ProgressBar android:id="@+id/progress" style="@style/Base.Widget.AppCompat.ProgressBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginTop="@dimen/margin_top_down_component" android:indeterminate="true" android:visibility="gone" />
 
         </LinearLayout>
     </LinearLayout>
-</android.support.design.widget.CoordinatorLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -2,7 +2,7 @@ package com.company.eventify.login;
 
 import android.Manifest;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
+import androidx.core.app.ActivityCompat;
 
 import com.company.eventify.MainActivity;
 import com.company.eventify.R;

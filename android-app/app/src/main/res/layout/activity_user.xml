@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto" 
     xmlns:tools="http://schemas.android.com/tools" android:id="@+id/relativeLayout" android:layout_width="match_parent" android:layout_height="match_parent" tools:context=".MainActivity">
 
@@ -9,15 +9,15 @@
     <Button android:id="@+id/fb_share_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="share" />
 
 
-    <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android" 
+    <androidx.viewpager.widget.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@+id/bar_container">
 
         <FrameLayout android:id="@+id/contentContainer" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bar_container" />
 
-    </android.support.v4.view.ViewPager>
+    </androidx.viewpager.widget.ViewPager>
 
 
     <com.roughike.bottombar.BottomBar app:bb_showShadow="true" android:id="@+id/bottomBar" android:layout_width="match_parent" android:layout_height="60dp" android:layout_gravity="bottom" android:background="@color/colorPrimaryDark" app:bb_activeTabColor="@color/colorAccent" app:bb_behavior="shy" app:bb_inActiveTabColor="@color/colorPrimaryLight" app:bb_titleTextAppearance="@style/bottomBarTextView" app:bb_tabXmlResource="@xml/bottombar_tabs_user" app:bb_titleTypeFace="fonts/font.ttf" />
 
 
-</android.support.design.widget.CoordinatorLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

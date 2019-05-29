@@ -2,11 +2,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto" 
     xmlns:tools="http://schemas.android.com/tools" android:id="@+id/top_parent" android:layout_width="match_parent" android:layout_height="match_parent" android:fitsSystemWindows="true" tools:context=".MainActivity">
 
-    <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/colorPrimaryDark" android:elevation="5dp" android:minHeight="?attr/actionBarSize" app:popupTheme="@style/ToolbarStyle" app:subtitleTextColor="@android:color/white" app:theme="@style/ToolbarStyle" app:titleTextColor="@android:color/white" />
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/colorPrimaryDark" android:elevation="5dp" android:minHeight="?attr/actionBarSize" app:popupTheme="@style/ToolbarStyle" app:subtitleTextColor="@android:color/white" app:theme="@style/ToolbarStyle" app:titleTextColor="@android:color/white" />
 
-    <android.support.v4.widget.DrawerLayout android:id="@+id/drawer_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+    <androidx.drawerlayout.widget.DrawerLayout android:id="@+id/drawer_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
 
-        <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_content" android:layout_width="match_parent" android:layout_height="match_parent">
 
             <Button android:id="@+id/fbk_share_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="share" />
@@ -14,17 +14,17 @@
 
             <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:src="@drawable/background" />
 
-            <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/swipe_refresh_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/swipe_refresh_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
 
-                <android.support.v7.widget.RecyclerView android:id="@+id/cardList" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/margin_right_left_cardList" android:layout_marginRight="@dimen/margin_right_left_cardList" android:clipToPadding="false" android:paddingBottom="76dp" />
-            </android.support.v4.widget.SwipeRefreshLayout>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/cardList" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/margin_right_left_cardList" android:layout_marginRight="@dimen/margin_right_left_cardList" android:clipToPadding="false" android:paddingBottom="76dp" />
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 
-            <android.support.design.widget.FloatingActionButton android:id="@+id/add_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom|right" android:layout_margin="16dp" android:src="@drawable/ic_add_white_24dp" app:elevation="5dp" app:layout_anchor="@id/cardList" app:layout_anchorGravity="bottom|right|end" />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/add_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom|right" android:layout_margin="16dp" android:src="@drawable/ic_add_white_24dp" app:elevation="5dp" app:layout_anchor="@id/cardList" app:layout_anchorGravity="bottom|right|end" />
 
-        </android.support.design.widget.CoordinatorLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-        <android.support.design.widget.NavigationView android:id="@+id/nvView" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_gravity="start" android:background="@color/colorPrimaryDark" app:elevation="5dp" app:headerLayout="@layout/drawer_top" app:itemIconTint="@color/white" app:itemTextColor="@color/white" app:menu="@menu/drawer_menu" />
+        <com.google.android.material.navigation.NavigationView android:id="@+id/nvView" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_gravity="start" android:background="@color/colorPrimaryDark" app:elevation="5dp" app:headerLayout="@layout/drawer_top" app:itemIconTint="@color/white" app:itemTextColor="@color/white" app:menu="@menu/drawer_menu" />
 
-    </android.support.v4.widget.DrawerLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
 </RelativeLayout>

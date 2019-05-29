@@ -10,10 +10,10 @@ import android.content.pm.PackageManager;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.core.app.ActivityCompat;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
@@ -72,9 +72,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
         Fabric.with(this, new Twitter(authConfig));
         gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
 
-        mGoogleApiClient = new GoogleApiClient.Builder(this)
-                .enableAutoManage(this /* FragmentActivity */, this /* OnConnectionFailedListener */)
-                .addApi(Auth.GOOGLE_SIGN_IN_API, gso).build();
+        mGoogleApiClient = new GoogleApiClient.Builder(this).addApi(Auth.GOOGLE_SIGN_IN_API, gso).build();
 
         pref = getSharedPreferences(Constants.PREF, Context.MODE_PRIVATE);
         SharedPreferences.Editor e = pref.edit();
@@ -91,7 +89,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
             checkPermissionLocation();
         }
 
-        setContentView(com.company.eventify.R.layout.activity_main);
+        setContentView(R.layout.activity_main);
         initFragment();
         Constants.typeface = Typeface.createFromAsset(getAssets(), "fonts/font.ttf");
         TextView tv_logo = (TextView) findViewById(R.id.tv_eventify);

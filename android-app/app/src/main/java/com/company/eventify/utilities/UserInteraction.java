@@ -6,8 +6,8 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.provider.Settings;
-import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AlertDialog;
+import androidx.core.app.ActivityCompat;
+import androidx.appcompat.app.AlertDialog;
 
 import com.company.eventify.R;
 import com.company.eventify.user.UserActivity;
@@ -20,10 +20,6 @@ import com.facebook.share.widget.ShareDialog;
 
 import java.util.Calendar;
 import java.util.StringTokenizer;
-
-/**
- * Created by marco on 23/03/2017.
- */
 
 public class UserInteraction {
 
