@@ -6,7 +6,7 @@ Platform designed to create, manage and search events of various category. It is
 
 ## Android app Screens
 
-![](https://raw.githubusercontent.com/tassoneroberto/eventify/master/android-app/screenshots/screenshot1.png9{:height="781px" width="393px"}
+![](https://raw.githubusercontent.com/tassoneroberto/eventify/master/android-app/screenshots/screenshot1.png){:height="781px" width="393px"}
 ![](https://raw.githubusercontent.com/tassoneroberto/eventify/master/android-app/screenshots/screenshot2.png){:height="781px" width="393px"}
 ![](https://raw.githubusercontent.com/tassoneroberto/eventify/master/android-app/screenshots/screenshot3.png){:height="781px" width="393px"}
 ![](https://raw.githubusercontent.com/tassoneroberto/eventify/master/android-app/screenshots/screenshot4.png){:height="781px" width="393px"}
