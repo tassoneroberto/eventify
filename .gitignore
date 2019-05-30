@@ -7,3 +7,6 @@ android-app/.gradle/
 android-app/app/build
 android-app/local.properties
 .vscode
+android-app/app/app.iml
+android-app/android-app.iml
+android-app/.idea/
