@@ -6,7 +6,13 @@ Platform designed to create, manage and search events of various category. It is
 
 ## Android app Screens
 
-// TODO
+![](https://raw.githubusercontent.com/tassoneroberto/eventify/master/android-app/screenshots/screenshot1.png)
+![](https://raw.githubusercontent.com/tassoneroberto/eventify/master/android-app/screenshots/screenshot2.png)
+![](https://raw.githubusercontent.com/tassoneroberto/eventify/master/android-app/screenshots/screenshot3.png)
+![](https://raw.githubusercontent.com/tassoneroberto/eventify/master/android-app/screenshots/screenshot4.png)
+![](https://raw.githubusercontent.com/tassoneroberto/eventify/master/android-app/screenshots/screenshot5.png)
+![](https://raw.githubusercontent.com/tassoneroberto/eventify/master/android-app/screenshots/screenshot6.png)
+![](https://raw.githubusercontent.com/tassoneroberto/eventify/master/android-app/screenshots/screenshot7.png)
 
 ## Web App Screens
 
@@ -14,4 +20,17 @@ Platform designed to create, manage and search events of various category. It is
 
 ## Web API Screens
 
-// TODO
+![](https://raw.githubusercontent.com/tassoneroberto/eventify/master/web-api/screenshots/screenshot1.png)
+![](https://raw.githubusercontent.com/tassoneroberto/eventify/master/web-api/screenshots/screenshot2.png)
+![](https://raw.githubusercontent.com/tassoneroberto/eventify/master/web-api/screenshots/screenshot3.png)
+![](https://raw.githubusercontent.com/tassoneroberto/eventify/master/web-api/screenshots/screenshot4.png)
+![](https://raw.githubusercontent.com/tassoneroberto/eventify/master/web-api/screenshots/screenshot5.png)
+![](https://raw.githubusercontent.com/tassoneroberto/eventify/master/web-api/screenshots/screenshot6.png)
+![](https://raw.githubusercontent.com/tassoneroberto/eventify/master/web-api/screenshots/screenshot7.png)
+![](https://raw.githubusercontent.com/tassoneroberto/eventify/master/web-api/screenshots/screenshot8.png)
+![](https://raw.githubusercontent.com/tassoneroberto/eventify/master/web-api/screenshots/screenshot9.png)
+![](https://raw.githubusercontent.com/tassoneroberto/eventify/master/web-api/screenshots/screenshot10.png)
+![](https://raw.githubusercontent.com/tassoneroberto/eventify/master/web-api/screenshots/screenshot11.png)
+![](https://raw.githubusercontent.com/tassoneroberto/eventify/master/web-api/screenshots/screenshot12.png)
+![](https://raw.githubusercontent.com/tassoneroberto/eventify/master/web-api/screenshots/screenshot13.png)
+![](https://raw.githubusercontent.com/tassoneroberto/eventify/master/web-api/screenshots/screenshot14.png)
