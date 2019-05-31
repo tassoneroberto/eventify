@@ -9,8 +9,10 @@ Platform designed to create, manage and search events of various category. It is
 <img src="https://raw.githubusercontent.com/tassoneroberto/eventify/master/android-app/screenshots/screenshot2.png" width="200px" /><img src="https://raw.githubusercontent.com/tassoneroberto/eventify/master/android-app/screenshots/screenshot3.png" width="200px" /><img src="https://raw.githubusercontent.com/tassoneroberto/eventify/master/android-app/screenshots/screenshot4.png" width="200px" /><img src="https://raw.githubusercontent.com/tassoneroberto/eventify/master/android-app/screenshots/screenshot5.png" width="200px" /><img src="https://raw.githubusercontent.com/tassoneroberto/eventify/master/android-app/screenshots/screenshot6.png" width="200px" /><img src="https://raw.githubusercontent.com/tassoneroberto/eventify/master/android-app/screenshots/screenshot7.png" width="200px" />
 
 ## Web App Screens
-
-// TODO
+<img src="https://raw.githubusercontent.com/tassoneroberto/eventify/master/web-app/screenshots/screenshot1.png" width="600px" />
+<img src="https://raw.githubusercontent.com/tassoneroberto/eventify/master/web-app/screenshots/screenshot2.png" width="600px" />
+<img src="https://raw.githubusercontent.com/tassoneroberto/eventify/master/web-app/screenshots/screenshot3.png" width="600px" />
+<img src="https://raw.githubusercontent.com/tassoneroberto/eventify/master/web-app/screenshots/screenshot4.png" width="600px" />
 
 ## Web API Screens
 
