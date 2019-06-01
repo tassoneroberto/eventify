@@ -1,0 +1,122 @@
+/* 0
+.main-container{
+  padding-top: 100px;
+}
+
+.filters-wrapper{
+  position: relative;
+  z-index: 90000;
+}
+
+sort-filters{
+  position: relative;
+  z-index: 20;
+}
+
+cart{
+  position: absolute;
+  top: -23px;
+  right: -57px;
+  z-index: 99999999;
+}
+
+search-bar{
+  position: relative;
+  top: -8px;
+}
+
+showcase{
+  position: relative;
+  top: -39px;
+  z-index: 10
+}
+
+.sort-filters-wrapper{
+  position: relative;
+}
+
+
+
+/** Media queries **/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+
+  /* filters {
+    position: fixed;
+    top: 44px;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .sort-filters-wrapper {
+    position: fixed;
+    top: 44px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.3);
+    padding-top: 10px;
+    background: red;
+    z-index: 200;
+  }
+
+  .main-container {}
+*/
+  search-bar {
+    position: fixed;
+    top: 56px;
+    width: 100%;
+    left: 0;
+    z-index: 9000;
+  }
+
+  mat-sidenav-container {
+    margin-top: 100px!important;
+  }
+ 
+}
+
+
+.mat-sidenav-container {
+  background: transparent;
+}
+
+.mat-sidenav {
+  max-width: 400px;
+}
+
+.mat-toolbar {
+  z-index: 999 !important;
+}
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.example-is-mobile .example-toolbar {
+  position: fixed;
+  /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+  z-index: 2;
+}
+
+h1.example-app-name {
+  margin-left: 8px;
+}
+
+.example-sidenav-container {
+  /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+     causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+  flex: 1;
+}
+
+.example-is-mobile .example-sidenav-container {
+  /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
+     `<body>` to be our scrolling element for mobile layouts. */
+  flex: 1 0 auto;
+}

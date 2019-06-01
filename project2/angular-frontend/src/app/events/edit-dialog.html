@@ -1,0 +1,114 @@
+
+
+<!--
+
+-->
+
+<h1 mat-dialog-title>Create new event</h1>
+
+<div mat-dialog-content style="text-size:20px">
+
+  <h2 style="margin-bottom: 6px">Title </h2>
+  <mat-form-field color="accent" style="width:100%">
+    <input matInput style="width:100%" [(ngModel)]="event.title">
+  </mat-form-field>
+
+
+  <agm-map [(latitude)]="location.lat" [(longitude)]="location.lng" [(zoom)]="location.zoom" [disableDefaultUI]="true" [zoomControl]="true" [(fitBounds)]='location.viewport'>
+    <agm-marker [(latitude)]="location.marker.lat" [(longitude)]="location.marker.lng" [markerDraggable]="location.marker.draggable" (dragEnd)='markerDragEnd($event)'></agm-marker>
+  </agm-map>
+
+
+  <div class="iconalign">
+
+
+    <mat-icon style="color:#ff7730;float:left;margin-right:8px;">location_on</mat-icon>
+
+    <mat-form-field color="accent" style="width:100%">
+      <input  placeholder="Location" matInput ngx-google-places-autocomplete [options]='options' #placesRef="ngx-places" [(ngModel)]="event.location" (input)="onSearchChange($event.target.value)"/>
+    </mat-form-field>
+
+
+  </div>
+
+  <div class="iconalign">
+    <mat-icon style="margin-right:8px;color:#ff7300;vertical-align: text-bottom">label</mat-icon>
+    <mat-form-field color="accent" style="width:100%">
+      <mat-select [(ngModel)]="event.category" color="accent" placeholder="Category">
+        <mat-option *ngFor="let category of categories" [value]="category">{{category}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="iconalign">
+    <i class="fa fa-calendar-alt" style="color:#ff7730;margin-right: 8px;font-size:24px"></i>
+    <mat-form-field style="width:100%" color="accent">
+
+    <input
+    [(ngModel)]="event.opening"
+    matInput
+    style="background-color: transparent!important;"
+    class="form-control"
+    type="text"
+    mwlFlatpickr
+    [altInput]="true"
+    [convertModelValue]="true"
+    [enableTime]="true"
+    dateFormat="Y-m-dTH:i"
+    altFormat="F j, Y H:i"
+    placeholder="Starting">
+  </mat-form-field>
+   - 
+  <mat-form-field style="width:100%" color="accent">
+
+      <input
+      [(ngModel)]="event.ending"
+
+      matInput
+      style="background-color: transparent!important;"
+      class="form-control"
+      type="text"
+      mwlFlatpickr
+      [altInput]="true"
+      [convertModelValue]="true"
+      [enableTime]="true"
+      dateFormat="Y-m-dTH:i"
+      altFormat="F j, Y H:i"
+      placeholder="Ending">
+    </mat-form-field>
+  </div>
+
+
+  <div class="iconalign">
+    <i class="fas fa-paperclip" style="color:#ff7300;margin-right: 8px;font-size:24px"></i>
+    <mat-form-field style="width:100%" color="accent">
+      <textarea matInput placeholder="Description"     [(ngModel)]="event.description"
+      ></textarea>
+    </mat-form-field>
+  </div>
+  <div class="iconalign">
+    <i class="fa fa-eur" style="color:#ff7730;margin-right: 8px;font-size:24px"></i>
+
+    <mat-form-field style="width:100%" color="accent">
+      <input matInput type="number" placeholder="Price" [(ngModel)]="event.price">
+    </mat-form-field>
+  </div>
+ 
+ 
+
+
+  <div class="iconalign">
+    <i class="fas fa-chair" style="color:#ff7300;margin-right: 8px;font-size:24px"></i>
+
+    <mat-form-field style="width:100%" color="accent">
+      <input matInput type="number" placeholder="Posts"     [(ngModel)]="event.total_posts"
+      >
+    </mat-form-field>
+  </div>
+
+
+
+</div>
+<div mat-dialog-actions align="end">
+  <button mat-button color="accent" (click)="onNoClick()">DISCARD</button>
+  <button mat-button color="accent" (click)="editClick()" [mat-dialog-close]="event" cdkFocusInitial>EDIT</button>
+</div>

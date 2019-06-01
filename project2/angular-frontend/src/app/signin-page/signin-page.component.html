@@ -1,0 +1,258 @@
+<!-- <div style=" display: flex;
+height: 100%;
+width: 100%;
+align-items: center;
+justify-content: center;">
+
+  <mat-card color="primary" style="background:#5147FF;height: 85%;width: 85%;border-radius: 8px">
+    <div style="    height: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: -webkit-center;
+    width: max-content;
+    margin: auto;
+">
+      <div style="    display: flex;
+      flex-direction: column;
+      justify-content: center;">
+        <mat-card-title>Sign in</mat-card-title>
+        <mat-card-subtitle> Hello! Insert your sign in data</mat-card-subtitle>
+      </div>
+
+      <div style="
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;">
+
+        <div class="iconalign">
+          <mat-icon style="float:left;margin-right:8px;color:#ff7300">face</mat-icon>
+
+          <mat-form-field style="float:left;    width: -webkit-fill-available;
+  font-size: 20px;">
+
+            <input id="username" matInput placeholder="Enter your username" required [(ngModel)]="username">
+          </mat-form-field>
+
+        </div>
+        <div class="iconalign">
+          <mat-icon style="float:left;margin-right:8px;color:#ff7300">email</mat-icon>
+
+          <mat-form-field style="float:left;    width: -webkit-fill-available;
+          font-size: 20px;">
+
+            <input id="email" matInput [formControl]="form_email" placeholder="Enter your email" required [(ngModel)]="email">
+            <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+          </mat-form-field>
+
+        </div>
+
+        <div class="iconalign">
+          <mat-icon style="float:left;margin-right:8px;color:#ff7300">https</mat-icon>
+
+          <mat-form-field style="float:left;     width: -webkit-fill-available;
+          font-size: 20px;">
+            <input id="password" color="white" matInput required placeholder="Enter your password" [type]="hide ? 'password' : 'text'"
+              [(ngModel)]="password">
+            <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div style="
+		
+      display: flex;
+      flex-direction: column;
+      justify-content: center;">
+
+        <button mat-stroked-button style="width: -webkit-fill-available;margin:16px 8px 8px 0px" color="accent" type="submit"
+          (click)="trySignin()">Sign in</button>
+        <mat-card-subtitle style="width: max-content;
+        "> Already have an account? <a style="color:#ff7300"
+            routerlink="../register" href="/login"><strong>Log in
+            </strong></a></mat-card-subtitle>
+      </div>
+    </div>
+  </mat-card>
+</div> -->
+
+
+<!-- login page -->
+<div style=" display: flex;
+height: 100%;
+width: 100%;
+align-items: center;
+justify-content: center;">
+
+  <mat-card color="primary" style="background:#5147FF;height: 85%;width: 85%;border-radius: 8px">
+    <div style="   text-align: -webkit-center;
+    width: max-content;
+    margin: auto;">
+      <mat-card-title>Sign in</mat-card-title>
+      <mat-card-subtitle> Hello! Insert your sign in data</mat-card-subtitle>
+    </div>
+    <mat-tab-group mat-stretch-tabs class="example-stretched-tabs" color="accent" backgroundColor="primary" style="    height: inherit;
+    
+    display: flex;
+    flex-direction: column;
+    text-align: -webkit-center;
+    width: max-content;
+    margin: auto;">
+      <mat-tab label="User">
+        <div style="    height: 100%;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: -webkit-center;
+        width: max-content;
+        margin: auto;">
+
+
+
+          <div style="
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;">
+            <div class="iconalign">
+              <mat-icon style="float:left;margin-right:8px;color:#ff7300">face</mat-icon>
+
+              <mat-form-field style="float:left;    width: -webkit-fill-available;
+font-size: 20px;">
+
+                <input id="username" matInput placeholder="Enter your name" required [(ngModel)]="name">
+              </mat-form-field>
+
+            </div>
+
+            <div class="iconalign">
+              <mat-icon style="float:left;margin-right:8px;color:#ff7300">face</mat-icon>
+
+              <mat-form-field style="float:left;    width: -webkit-fill-available;
+font-size: 20px;">
+
+                <input id="surname" matInput placeholder="Enter your surname" required [(ngModel)]="surname">
+              </mat-form-field>
+
+            </div>
+
+            <div class="iconalign">
+              <mat-icon style="float:left;margin-right:8px;color:#ff7300">email</mat-icon>
+
+              <mat-form-field style="float:left;    width: -webkit-fill-available;
+              font-size: 20px;">
+
+                <input id="email" matInput [formControl]="form_email" placeholder="Enter your email" required
+                  [(ngModel)]="email">
+                <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+              </mat-form-field>
+
+            </div>
+
+            <div class="iconalign">
+              <mat-icon style="float:left;margin-right:8px;color:#ff7300">https</mat-icon>
+
+              <mat-form-field style="float:left;     width: -webkit-fill-available;
+              font-size: 20px;">
+                <input id="password" color="white" matInput required placeholder="Enter your password" [type]="hide ? 'password' : 'text'"
+                  [(ngModel)]="password">
+                <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+              </mat-form-field>
+            </div>
+          </div>
+
+          <div style="
+        
+          display: flex;
+          flex-direction: column;
+          justify-content: center;">
+
+            <button mat-stroked-button style="width: -webkit-fill-available;margin:16px 8px 8px 0px" color="accent"
+              type="submit" (click)="trySignin()">Sign in</button>
+            <mat-card-subtitle style="width: max-content;
+              "> Already have an account? <a style="color:#ff7300"
+                routerlink="../register" href="/login"><strong>Log in
+                </strong></a></mat-card-subtitle>
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab label="Organizer">
+        <div style="    height: 100%;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: -webkit-center;
+        width: max-content;
+        margin: auto;">
+
+
+
+          <div style="
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;">
+
+            <div class="iconalign">
+              <mat-icon style="float:left;margin-right:8px;color:#ff7300">face</mat-icon>
+              <mat-form-field style="float:left;    width: -webkit-fill-available;font-size: 20px;">
+                <input id="username" matInput placeholder="Enter your username" required [(ngModel)]="username">
+              </mat-form-field>
+
+            </div>
+
+            <div class="iconalign">
+              <mat-icon style="float:left;margin-right:8px;color:#ff7300">phone</mat-icon>
+
+              <mat-form-field style="float:left;    width: -webkit-fill-available;font-size: 20px;">
+
+                <input id="phone" matInput placeholder="Enter your phone" required [(ngModel)]="phone">
+              </mat-form-field>
+
+            </div>
+            <div class="iconalign">
+              <mat-icon style="float:left;margin-right:8px;color:#ff7300">email</mat-icon>
+
+              <mat-form-field style="float:left;    width: -webkit-fill-available;
+              font-size: 20px;">
+
+                <input id="email" matInput [formControl]="form_email" placeholder="Enter your email" required
+                  [(ngModel)]="email">
+                <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+              </mat-form-field>
+
+            </div>
+
+            <div class="iconalign">
+              <mat-icon style="float:left;margin-right:8px;color:#ff7300">https</mat-icon>
+
+              <mat-form-field style="float:left;     width: -webkit-fill-available;
+              font-size: 20px;">
+                <input id="password" color="white" matInput required placeholder="Enter your password" [type]="hide ? 'password' : 'text'"
+                  [(ngModel)]="password">
+                <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+              </mat-form-field>
+            </div>
+          </div>
+
+          <div style="
+        
+          display: flex;
+          flex-direction: column;
+          justify-content: center;">
+
+            <button mat-stroked-button style="width: -webkit-fill-available;margin:16px 8px 8px 0px" color="accent"
+              type="submit" (click)="trySigninOrganizer()">Sign in</button>
+            <mat-card-subtitle style="width: max-content;
+            "> Already have an account? <a style="color:#ff7300"
+                routerlink="../register" href="/login"><strong>Log in
+                </strong></a></mat-card-subtitle>
+          </div>
+        </div>
+      </mat-tab>
+
+    </mat-tab-group>
+
+  </mat-card>
+</div>

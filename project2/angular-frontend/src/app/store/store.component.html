@@ -1,0 +1,111 @@
+<!-- <div class="main-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-3">
+        <div class="filters-wrapper">
+          <url-form (onURLChange)='onURLChange($event)'></url-form>
+          <cart></cart>
+          <filters #filtersComponent [categories]='originalData.categories' [customFilters]='customFilters'
+            [priceFilters]='priceFilters' (onFilterChange)='onFilterChange($event)'></filters>
+        </div>
+      </div>
+      <div class="col-9">
+        <div class="row">
+          <div class="col-8">
+            <div class="sort-filters-wrapper">
+              <sort-filters [filters]='sortFilters' (onSortChange)='sortevents($event)'></sort-filters>
+            </div>
+          </div>
+          <div class="col-4">
+            <search-bar #searchComponent (onSearchChange)='onSearchChange($event)'></search-bar>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <showcase [events]='events'></showcase>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
+  <mat-toolbar [class.mat-elevation-z2]="false" [class.mat-elevation-z8]="true" color="primary" class="example-toolbar">
+    <button mat-icon-button (click)="snav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <h1>{{title}}</h1>
+    <span class="spacer"></span>
+    <search-bar #searchComponent (onSearchChange)='onSearchChange($event)'></search-bar>
+    <button mat-button color="accent" (click)="logout()">LOG OUT</button>
+  </mat-toolbar>
+
+  <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+    <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches"
+      fixedTopGap="56" [class.mat-elevation-z2]="false" [class.mat-elevation-z8]="true">
+      <!-- <app-sidebar></app-sidebar> -->
+      <mat-list class="my-list">
+        <mat-list-item>
+
+          <button mat-stroked-button (click)="goToTickets();" color="accent" style="width:100%"><i class="fas fa-ticket-alt"
+              aria-hidden="true"></i> My tickets</button>
+        </mat-list-item>
+
+        <sort-filters [filters]='sortFilters' (onSortChange)='sortevents($event)'></sort-filters>
+        <mat-divider></mat-divider>
+
+        <mat-list-item>
+          <h3 style="margin-left: 8px;color: white!important;font-size: 18px!important;">
+            <mat-icon style="margin-right:8px;color:#ff7300;vertical-align: text-bottom">location_on</mat-icon>Select
+            distance in
+            Km
+          </h3>
+
+        </mat-list-item>
+        <mat-list-item>
+          <mat-slider (change)='onSelectChange($event)' thumbLabel="true" min="0" max="5" step="1" [value]='c.rangeDistance'>
+          </mat-slider>
+        </mat-list-item>
+        <mat-list-item>
+          <h3 style="margin-left: 8px;color: white!important;font-size: 18px!important;">
+            <mat-icon style="margin-right:8px;color:#ff7300;vertical-align: text-bottom">access_time</mat-icon>Select
+            day
+          </h3>
+        </mat-list-item>
+        <mat-list-item>
+          <mat-slider (change)='onSelectChange($event)' thumbLabel="true" min="0" max="5" step="1" [value]='c.rangeTime'>
+          </mat-slider>
+        </mat-list-item>
+
+
+
+
+
+        <filters #filtersComponent [categories]='this.app.categories'  [priceFilters]='priceFilters' (onFilterChange)='onFilterChange($event)'></filters>
+      </mat-list>
+
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <cart></cart>
+
+      <showcase [events]='this.events' style="display: flex; flex-wrap: wrap;flex-direction: column;max-height:126%;justify-content: center"></showcase>
+      <!-- <calendar-component fxFlex="100%;" fxFlex.xs="100%;"style="height:fit-content;margin:4px"></calendar-component>
+        <app-events fxFlex="360px;" fxFlex.xs="100%;" ></app-events> -->
+
+      <!-- <app-messages></app-messages>-->
+
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+
+
+
+<!-- Copyright 2018 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->

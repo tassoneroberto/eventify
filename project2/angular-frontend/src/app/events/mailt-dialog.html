@@ -1,0 +1,15 @@
+
+<h1 mat-dialog-title>Send email for {{event.title}}</h1>
+<div mat-dialog-content>
+  
+
+
+  <mat-form-field>
+    <textarea matInput placeholder="Message" [(ngModel)]="text" ></textarea>
+  </mat-form-field>
+
+</div>
+<div mat-dialog-actions align="end">
+  <button mat-button color="accent" mat-dialog-close>DIMISS</button>
+  <button mat-button color="accent" [mat-dialog-close]="text" cdkFocusInitial>SEND</button>
+</div>

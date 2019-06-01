@@ -1,0 +1,73 @@
+<mat-list-item>
+  <h3 style="margin-left: 8px;color: white!important;
+font-size: 18px!important;">
+            <mat-icon style="margin-right:8px;color:#ff7300;vertical-align: text-bottom">category</mat-icon>Select
+             category
+  </h3>
+</mat-list-item>
+<mat-list-item>
+  <mat-form-field color="accent">
+    <mat-select [(ngModel)]="this.selectedCategories"  panelClass="panel" [formControl]="toppings" multiple>
+      <mat-option *ngFor="let category of categories" (onSelectionChange)='onInputChange($event, category, "category")' [value]="category">{{category}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+</mat-list-item>
+
+<!-- <form >
+  <div *ngFor = 'let filter of categories'>
+    <label >
+      <input type="checkbox" checked (change)='onInputChange($event, filter, "category")'>
+      <span class="square"><span class="fill"></span></span>
+      <span class="label">{{filter}}</span>
+      <span></span>
+    </label>
+  </div>
+</form> -->
+<mat-list-item>
+  <h3 style="margin-left: 8px;color: white!important;
+font-size: 18px!important;">
+            <mat-icon style="margin-right:8px;color:#ff7300;vertical-align: text-bottom">local_offer</mat-icon>
+            Filter by price
+  </h3>
+</mat-list-item>
+
+
+<!-- <form *ngIf = "showFilters">
+    <div class="category-filter filter-wrapper" *ngFor = 'let filter of categories'>
+      <label class="fake-checkbox">
+        <input type="checkbox" checked (change)='onInputChange($event, filter, "category")'>
+        <span class="square"><span class="fill"></span></span>
+        <span class="label">{{filter}}</span>
+        <span></span>
+      </label>
+    </div>
+  </form> -->
+
+  <mat-radio-group style="padding: 8px" class="example-radio-group" [(ngModel)]="priceChecked">
+    <mat-radio-button class="example-radio-button" *ngFor="let filter of priceFilters" [value]="filter.name" (click)='onInputChange($event, filter, "price")'
+      [checked]="filter.checked">
+      {{filter.name}}
+    </mat-radio-button>
+  </mat-radio-group>
+
+<!-- <form>
+  <div class="custom-filter filter-wrapper" *ngFor='let filter of priceFilters'>
+    <label class="fake-checkbox">
+      <input type="radio" name="price" [checked]='filter.checked' (click)='onInputChange($event, filter, "price")'>
+      <span class="circle"><span class="fill"></span></span>
+      <span class="label">{{filter.name}}</span>
+      <span></span>
+    </label>
+  </div>
+</form> -->
+<!-- <h5>Custom filters</h5>
+  <form *ngIf = "showFilters">
+    <div class="custom-filter filter-wrapper" *ngFor = 'let filter of customFilters'>
+        <label class="fake-checkbox">
+          <input type="radio" name="custom" [checked]='filter.checked' (click)='onInputChange($event, filter, "custom")'>
+          <span class="circle"><span class="fill"></span></span>
+          <span class="label">{{filter.name}}</span>
+          <span></span>
+        </label>
+    </div>
+  </form> -->

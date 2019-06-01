@@ -1,0 +1,66 @@
+<mat-list>
+  <mat-list-item>
+    <mat-icon mat-list-icon>person</mat-icon>
+    <h4 *ngIf="customer.getUser()" mat-line>{{customer.getUser()}}</h4>
+    <p mat-line> </p>
+  </mat-list-item>
+  <mat-list-item>
+    <mat-icon mat-list-icon>email</mat-icon>
+    <h4 *ngIf="customer.getEmail()" mat-line>{{customer.getEmail()}}</h4>
+    <p mat-line> </p>
+  </mat-list-item>
+  <mat-list-item>
+    <mat-icon mat-list-icon>phone</mat-icon>
+    <h4 *ngIf="customer.getId()" mat-line>{{customer.getPhone()}}</h4>
+    <p mat-line> </p>
+  </mat-list-item>
+  <!-- <mat-list-item>
+    <mat-icon mat-list-icon>phone</mat-icon>
+    <h4 *ngIf="customer.isLogged()" mat-line>{{customer.getToken()}}</h4>
+    <p mat-line> </p>
+  </mat-list-item> -->
+
+  <mat-divider></mat-divider>
+  <!-- <mat-list-item>
+		<h3 style="margin-left: 8px;color: white!important;
+font-size: 18px!important;">
+			<mat-icon style="margin-right:8px;color:#ff7300;vertical-align: text-bottom">location_on</mat-icon>Select distance in
+			Km
+		</h3>
+	</mat-list-item>
+	<mat-list-item>
+		<mat-slider thumbLabel="true">
+		</mat-slider>
+	</mat-list-item>
+	<mat-list-item>
+		<h3 style="margin-left: 8px;color: white!important;
+font-size: 18px!important;">
+			<mat-icon style="margin-right:8px;color:#ff7300;vertical-align: text-bottom">access_time</mat-icon>Select day
+		</h3>
+	</mat-list-item>
+	<mat-list-item>
+		<mat-slider >
+		</mat-slider>
+	</mat-list-item>
+	<mat-list-item>
+		<h3 style="margin-left: 8px;color: white!important;
+			font-size: 18px!important;">
+			<mat-icon style="margin-right:8px;color:#ff7300;vertical-align: text-bottom">label</mat-icon>Select category
+		</h3>
+	</mat-list-item>
+	
+	<mat-list-item>
+		<mat-form-field color="accent"style="width:100%">
+			<mat-select color="accent">
+			  <mat-option>None</mat-option>
+			  <mat-option *ngFor="let category of categories" [value]="category">{{category}}</mat-option>
+			</mat-select>
+		  </mat-form-field>
+		  
+	</mat-list-item>
+	
+	<mat-list-item>
+		<button mat-stroked-button color="accent" style="width:100%"><mat-icon>filter_list</mat-icon>
+			Filter</button>
+	</mat-list-item>
+</mat-list> -->

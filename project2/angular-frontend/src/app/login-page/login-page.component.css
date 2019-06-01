@@ -1,0 +1,12 @@
+.example-stretched-tabs {
+    max-width: 800px;
+  }
+  .mat-tab-body-wrapper{
+    height: 100%!important;
+    /* min-height: 100%; */
+    display: flex!important;
+    flex-direction: column!important;
+    text-align: -webkit-center!important;
+    width: max-content!important;
+    margin: auto!important;
+  }

@@ -1,0 +1,43 @@
+@import "../shared/mixins";
+@import "../../evestyles.scss";
+
+
+.wrapper{
+  display: block;
+  height: 35px;
+  background-color:transparent;
+  font-size: 14px;
+  padding-left: 11px;
+  position: relative;
+  top: 4px;
+  label{
+    opacity: 0.8;
+  }
+  select{
+    background-color:transparent;
+    border: none;
+    font-size: 13px;
+    margin-left: 2px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 130px;
+  }
+ 
+}
+
+/** Media queries **/
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px) {
+    .wrapper{
+      label{
+        color: white;
+      }
+      select{
+        color: white;
+      }
+      
+    }
+
+  }
+  .mat-form-field{width: 100%}

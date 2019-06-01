@@ -1,0 +1,81 @@
+{
+  "categories": [
+    {
+      "categori_id": 1,
+      "name": "Cinema"
+    },
+    {
+      "categori_id": 2,
+      "name": "Outdoor"
+    },
+    {
+      "categori_id": 3,
+      "name": "food"
+    },
+    {
+      "categori_id": 4,
+      "name": "sea"
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "title": "Lorem",
+      "price": "60.000",
+      "available": true,
+      "best_seller": true,
+      "categories": [
+        1
+      ],
+      "img": "http://lorempixel.com/200/100/food/",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu."
+    },
+    {
+      "id": 2,
+      "title": "ipsum",
+      "price": "20.000",
+      "available": false,
+      "best_seller": false,
+      "categories": [
+        1
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu."
+    },
+    {
+      "id": 3,
+      "title": "dolor",
+      "price": "10.000",
+      "available": true,
+      "best_seller": true,
+      "categories": [
+        2
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu."
+    },
+    {
+      "id": 4,
+      "title": "sit",
+      "price": "35.000",
+      "available": false,
+      "best_seller": false,
+      "categories": [
+      
+        2
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu."
+    },
+    {
+      "id": 5,
+      "title": "amet",
+      "price": "12.000",
+      "available": true,
+      "best_seller": true,
+      "categories": [
+        1,
+        4
+      ],
+      "img": "http://lorempixel.com/200/100/food/",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu."
+   }
+  ]
+}

@@ -1,0 +1,35 @@
+<div class="preview" [class.expanded]='expanded'>
+  <button [class.not-shown]='!events.length || expanded' type="button" class="circle" (click)="onCartClick()">
+    <img src="../../assets/cart_white.svg" alt="cart" />
+    <div class="indicator"><span>{{numevents}}</span></div>
+  </button>
+  <div class="fill" [style.height]="expanded ? expandedHeight : inherit" [class.not-shown]='!events.length' [class.animate-plop]='animatePlop' [class.shown]='animatePopout && !expanded'>
+    <div class="expanded-info" [class.shown]='expanded'>
+      <h3>This is what you're gonna buy...</h3>
+      <div class="event" *ngFor="let item of events">
+        <div class="row">
+          <div class="col-6-sm description">
+            <p>{{item.amount}} x {{item.title}}</p>
+          </div>
+          <div class="col-6-sm price">
+            <p>{{item.amount*item.price | currency:'EUR':'symbol':'1.0-0' }}</p>
+          </div>
+        </div>
+        <button class="delete-btn" (click) = 'deleteevent(item)'>x</button>
+      </div>
+      <button class="pay-btn" (click)="flushCart()" mat-raised-button color="accent">
+          <mat-icon color="white" >payment</mat-icon>
+          Pay {{cartTotal | currency:'EUR':'symbol':'1.0-0'}}</button>
+
+      <!-- <button type="button" (click)="flushCart()" class="pay-btn">
+          <mat-icon color="accent" >payment</mat-icon>
+
+        Pay {{cartTotal | currency:'EUR':'symbol':'1.0-0'}}
+        </button> -->
+    </div>
+    <button type="button" class="close-btn" *ngIf='expanded' (click)="onCartClick()">X</button>
+  </div>
+</div>
+<div class="overlay" [class.shown]='expanded'>
+
+</div>

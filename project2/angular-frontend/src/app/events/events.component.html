@@ -1,0 +1,87 @@
+<ul style="list-style: none;margin: 0;padding:0 ">
+
+  <div [@cardsAnimation]="this.eventList.length">
+
+
+    <li *ngFor="let event of this.eventList" [class.selected]="hero === selectedHero" (click)="onSelect(event)">
+
+      <mat-card class="example-card" [style.background-color]="getStyle(event.category)">
+
+      <img mat-card-image src="../../assets/images/category/{{event.category}}.png" alt="Category Pic">
+        <mat-card-content>
+
+          <a (click)="setShareLink(event)" style="cursor: pointer;cursor: hand;" data-target="#share-dialog"
+            data-toggle="modal">
+            <i class="material-icons" style="font-size:24px;float: right;color: white">share</i>
+          </a>
+          <mat-card-title style="margin-bottom: 6px">{{event.title}}</mat-card-title>
+          <!-- <a href="#" (click)="fbShare(event)">
+            <i class="fa fa-facebook-square" style="font-size:24px;float: right;color: white"></i>
+          </a> -->
+
+
+          <div class="iconalign">
+            <mat-icon style="float:left;margin-right:8px;">domain</mat-icon>
+            <mat-card-subtitle>{{event.owner_name}}</mat-card-subtitle>
+          </div>
+          <div id="collapse{{event.id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" style="padding: 0px;margin-top: 5px;">
+
+
+            <div class="iconalign">
+                <i class="fa fa-eur" style="color:white;margin-right: 8px;font-size:24px"></i>
+
+              <mat-card-subtitle>{{event.price}}</mat-card-subtitle>
+            </div>
+
+            <div class="iconalign">
+              <mat-icon style="float:left;margin-right:8px;">phone</mat-icon>
+              <mat-card-subtitle>{{event.phone}}</mat-card-subtitle>
+            </div>
+
+            <div class="iconalign">
+                <i class="fa fa-calendar-alt" style="color:white;margin-right: 8px;font-size:24px"></i>
+
+              <mat-card-subtitle>{{event.opening | date:'dd/MM/yyyy hh:mm '}} - {{event.ending | date:'dd/MM/yyyy hh:mm '}}</mat-card-subtitle>
+            </div>
+
+            <div class="iconalign">
+              <mat-icon style="float:left;margin-right:8px;">location_on</mat-icon>
+              <mat-card-subtitle>{{event.location}}</mat-card-subtitle>
+            </div>
+
+            <div class="iconalign">
+                <i class="fas fa-chair" style="color:white;margin-right: 8px;font-size:24px"></i>
+
+              <mat-card-subtitle>{{event.remaining_posts}}/{{event.total_posts}}</mat-card-subtitle>
+            </div>
+            
+            <div class="panel-body" style="color:white;padding:0px; margin: 0px;">{{event.description}}</div>
+          </div>
+
+        </mat-card-content>
+        <hr color="white" style="color: white!important;margin: 0px;">
+
+        <mat-card-actions>
+          <button *ngIf="customer.isOrganizer()" mat-button color="accent" href="#form-edit" data-toggle="modal" id="edit{{event.id}}" data-target="#form-edit"
+            (click)="editEvent(event)">EDIT</button>
+          <button *ngIf="customer.isOrganizer()" mat-button color="accent" (click)="deleteEvent(event.id)">DELETE</button>
+          <a class="pull-right media-middle" data-toggle="collapse" href="#collapse{{event.id}}">
+            <button   class="expandbutton" [@myAwesomeAnimation]='state[event.id]' mat-icon-button (click)="rotatearrow(event.id)">
+              <mat-icon aria-label="Example icon-button with a heart icon">keyboard_arrow_down</mat-icon>
+            </button>
+          </a>
+
+
+          <button *ngIf="customer.isOrganizer()" class="pull-right media-middle" mat-icon-button id="message{{event.id}}" data-target="#event-message-dialog"
+            data-toggle="modal" (click)="sendMessage(event)">
+            <mat-icon aria-label="Example icon-button with a heart icon">message</mat-icon>
+          </button>
+
+
+        </mat-card-actions>
+      </mat-card>
+
+    </li>
+  </div>
+</ul>
+

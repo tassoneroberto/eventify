@@ -1,0 +1,72 @@
+import {
+  Event
+} from './event';
+
+export const EVENTS: Event[] = [
+  // {
+  //   id: 1,
+  //   phone: "0984252265",
+  //   price: 43,
+  //   title: "Strike",
+  //   owner: "BSide",
+  //   location: "Via Guglielmo Marconi, 32, 87036 Quattromiglia CS, Italy",
+  //   category: "Festival",
+  //   description: "Rappresentazione dell'opera di Luce Plamondon. Ingresso gratuito offerto dall'Unical per studenti e non.",
+  //   opening: new Date(),
+  //   ending: new Date(),
+  //   longitude: 22.22,
+  //   latitude: 11.22,
+  //   posts: 40,
+  //   remaining_posts: 22,
+  // },{
+  //   id: 1,
+  //   phone: "0984252265",
+  //   price: 43,
+  //   title: "Strike",
+  //   owner: "BSide",
+  //   location: "Via Guglielmo Marconi, 32, 87036 Quattromiglia CS, Italy",
+  //   category: "Festival",
+  //   description: "Rappresentazione dell'opera di Luce Plamondon. Ingresso gratuito offerto dall'Unical per studenti e non.",
+  //   opening: new Date(),
+  //   ending: new Date(),
+  //   longitude: 22.22,
+  //   latitude: 11.22,
+  //   posts: 40,
+  //   remaining_posts: 22,
+  // },
+  // {
+  //   id: 2,
+  //   phone: "0984252265",
+  //   price: 43,
+  //   title: "Strike",
+  //   owner: "BSide",
+  //   location: "Via Guglielmo Marconi, 32, 87036 Quattromiglia CS, Italy",
+  //   category: "Festival",
+  //   description: "Rappresentazione dell'opera di Luce Plamondon. Ingresso gratuito offerto dall'Unical per studenti e non.",
+  //   opening: new Date(),
+  //   ending: new Date(),
+  //   longitude: 22.22,
+  //   latitude: 11.22,
+  //   posts: 40,
+  //   remaining_posts: 22,
+  // },
+  // {
+  //   id: 36
+  //   ,
+  //   phone: "0984252265",
+  //   price: 43,
+  //   title: "Strike",
+  //   owner: "BSide",
+  //   location: "Via Guglielmo Marconi, 32, 87036 Quattromiglia CS, Italy",
+  //   category: "Cinema",
+  //   description: "Rappresentazione dell'opera di Luce Plamondon. Ingresso gratuito offerto dall'Unical per studenti e non.",
+  //   opening: new Date(),
+  //   ending: new Date(),
+  //   longitude: 22.22,
+  //   latitude: 11.22,
+  //   posts: 40,
+  //   remaining_posts: 22,
+  // },
+
+
+];

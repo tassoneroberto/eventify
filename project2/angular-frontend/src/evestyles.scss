@@ -1,0 +1,195 @@
+@import url(https://unpkg.com/font-awesome@4.7.0/css/font-awesome.css);
+  @import url(https://use.fontawesome.com/releases/v5.4.1/css/all.css);
+  // @import url(https://unpkg.com/angular-calendar@0.26.1/css/angular-calendar.css);
+ 
+  // @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css);
+
+  @import url(https://unpkg.com/flatpickr@4.5.2/dist/flatpickr.css);
+  
+@import '~@angular/material/theming';
+
+// Be sure that you only ever include 'mat-core' mixin once!
+// it should not be included for each theme.
+@include mat-core(); 
+$primary_color:#5147FF;
+$accent_color:#ff7300;
+$white:#ffffff;
+// define a real custom palette (using http://mcg.mbitson.com)
+$bv-brand: (
+    50: #ffffff,
+    100: #dde6f3,
+    200: #b4c9e4,
+    300: #7fa3d1,
+    400: #807aff,
+    500: #5147FF,
+    600: #3126ff,
+    700: #38649d,
+    800: #305687,
+    900: #284770,
+    A100: #ffffff,
+    A200: #dde6f3,
+    A400: #6992c9,
+    A700: #38649d,
+    contrast: (
+        50: $black-87-opacity,
+        100: $black-87-opacity,
+        200: $black-87-opacity,
+        300: $black-87-opacity,
+        400: $black-87-opacity,
+        500: white,
+        600: white,
+        700: white,
+        800: white,
+        900: white,
+        A100: $black-87-opacity,
+        A200: $black-87-opacity,
+        A400: $black-87-opacity,
+        A700: white,
+    )
+);
+
+$bv-orange: (
+    50: #ffffff,
+    100: #fff7f4,
+    200: #fecdbd,
+    300: #fc9977,
+    400: #fc8259,
+    500: #ff7300,
+    600: #fa551d,
+    700: #f44205,
+    800: #d63a04,
+    900: #b83204,
+    A100: #ffffff,
+    A200: #fff7f4,
+    A400: #fc8259,
+    A700: #f44205,
+    contrast: (
+        50: $black-87-opacity,
+        100: $black-87-opacity,
+        200: $black-87-opacity,
+        300: $black-87-opacity,
+        400: $black-87-opacity,
+        500: white,
+        600: white,
+        700: white,
+        800: white,
+        900: white,
+        A100: $black-87-opacity,
+        A200: $black-87-opacity,
+        A400: $black-87-opacity,
+        A700: white,
+    )
+);
+
+// mandatory stuff for theming
+$bv-palette-primary: mat-palette($bv-brand);
+$bv-palette-accent:  mat-palette($bv-orange);
+.mat-dialog-container  {
+   background-color: rgb(69, 60, 248)!important;
+   color:white!important;
+   border-radius: 6px;
+   
+}
+.mat-drawer{   background-color: #5147FF!important;
+    @include mat-elevation(1);
+  
+}
+.a{color:#b83204
+    !important;}
+// include the custom theme components into a theme object
+$bv-theme: mat-light-theme($bv-palette-primary, $bv-palette-accent);
+
+// include the custom theme object into the angular material theme
+@include angular-material-theme($bv-theme);
+
+//store theme
+
+/* You can add global styles to this file, and also import other style files */
+@import "./app/shared/grid";
+
+// html, body {
+//   font-family: $font-family;
+//   color: #444444;
+//   -webkit-font-smoothing: antialiased;
+//   -webkit-overflow-scrolling: touch;
+//   height: 100%;
+//   margin: 0;
+//   font-size: 16px;
+//   font-weight: 400;
+//   background-color: #f2f2f2;
+// }
+
+input, textarea, button {
+  font-family: inherit;
+  font-size: 1em;
+}
+
+input:not([type=checkbox]):not([type=radio]), textarea {
+  -webkit-appearance: none !important;
+}
+
+* {
+  outline: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: -1px;
+  text-overflow: '';
+}
+
+button {
+  cursor: pointer;
+}
+
+event-thumbnail{
+  width: 358px!important;
+
+}
+.mat-card-actions{
+  min-height: 44px;
+}
+
+.sebm-google-map-container {
+  height: 300px;
+}
+.agm-map-container-inner, .sebm-google-map-container-inner{
+  border-radius: 8px!important;
+}
+.mat-slider{width: 100%;}
+.mat-icon{
+  font-family: 'Material Icons';
+}
+
+.mat-select-content, .mat-select-panel-done-animating {
+  background: $primary_color;
+}
+.panel{
+  background: $primary_color;
+
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300");
+* {
+  font-family: 'Montserrat';
+  font-weight: 500;
+}
+h1,h2,h3{
+  font-family: 'Montserrat';
+}
+calendar-component, app-events {
+  overflow: overlay;
+height: 100%!important;
+}
+mat-sidenav{
+  min-width:200px ;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .my-list {
+    margin-top: 40px !important;  }
+}

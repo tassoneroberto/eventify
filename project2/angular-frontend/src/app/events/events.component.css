@@ -1,0 +1,18 @@
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css);
+
+.mat-card{
+    width: 348px!important;
+    border-radius: 6px!important;
+    margin: 6px;
+  }
+  .mat-card-image{
+    border-top-left-radius: 6px!important;
+    border-top-right-radius: 6px!important;
+    height: 120px;
+  }
+  .mat-card-title{font-size: 22px!important;}
+  .mat-card-subtitle{margin:0}
+  .material-icons{color:white;}
+ .mat-card-content{margin-bottom:4px!important;}
+ .mat-dialog-content{
+  min-height: 450px;}
