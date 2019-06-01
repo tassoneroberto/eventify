@@ -1,3 +1,9 @@
 project2/angular-frontend/.editorconfig
 project2/angular-frontend/node_modules/
 project2/angular-frontend/.vscode/settings.json
+project1/android-app/.gradle/5.4.1/gc.properties
+project1/android-app/.gradle/5.4.1/fileChanges/last-build.bin
+project1/android-app/.gradle/5.4.1/fileHashes/fileHashes.lock
+project1/android-app/.gradle/buildOutputCleanup/buildOutputCleanup.lock
+project1/android-app/.gradle/buildOutputCleanup/cache.properties
+project1/android-app/.gradle/vcs-1/gc.properties
