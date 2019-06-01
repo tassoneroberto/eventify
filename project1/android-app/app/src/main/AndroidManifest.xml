@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" package="com.company.eventify">
+    
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    
+    <application android:allowBackup="false" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:supportsRtl="true" android:theme="@style/AppTheme" tools:replace="android:allowBackup">
+        
+        <meta-data android:name="io.fabric.ApiKey" android:value="71f480159b1abae3108e5c09abe3e2e74f9a12d9" />
+        
+        <service android:name=".utilities.NotificationIntentService" android:enabled="true" android:exported="false" />
+        <receiver android:name=".utilities.NotificationEventReceiver" />
+        <receiver android:name=".utilities.NotificationServiceStarterReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+            </intent-filter>
+            
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+        
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id" />
+        
+        <provider android:name="com.facebook.FacebookContentProvider" android:authorities="com.facebook.app.FacebookContentProvider396023280743001" android:exported="true" />
+        
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyBZcxMQ5pDdjck0pfTIKkRsJA6egIJyRCo" />
+        
+        <activity android:name=".MainActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+        
+        <activity android:name=".user.UserActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        
+        <activity android:name=".organizer.OrganizerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        
+        <activity android:name=".organizer.OrganizerCreateEventActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        
+        <activity android:name=".login.Intro" android:screenOrientation="portrait" />
+        
+        <activity android:name=".organizer.OrganizerEditEventActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+    </application>
+    
+    
+</manifest>

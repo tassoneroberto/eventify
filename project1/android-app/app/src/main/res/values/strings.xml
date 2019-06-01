@@ -1,0 +1,171 @@
+<resources>
+        <string name="app_name">Eventify</string>
+        <string name="facebook_app_id">396023280743001</string>
+
+        <string name="hello_blank_fragment">Hello blank fragment</string>
+        <string name="option1">Option 1</string>
+        <string name="option2">Option 2</string>
+        <string name="option3">Option 3</string>
+        <string name="drawer_open">Open navigation drawer</string>
+        <string name="drawer_close">Close navigation drawer</string>
+        <string name="twitter_consumer_key"> WmhicV2P1dS4gEbmyd8uPmtbu</string>
+        <string name="twitter_consumer_secret">
+    3XU5oDBAQxzoplEwYH1aatTduvozDbjRLDRbSfdpVbcvs5WPo5 </string>
+        <string name="server_client_id">1062816213410-gkcq4ehids9lppa8fmkd45lvi9khi9hg.apps.googleusercontent.com</string>
+
+
+
+        <string-array name="category_list">
+                <item>Festival</item>
+                <item>Food &#38; Drink</item>
+                <item>Disco</item>
+                <item>Live Music</item>
+                <item>Cinema</item>
+                <item>Outdoor</item>
+                <item>Theatre</item>
+                <item>Museum</item>
+        </string-array>
+
+        <string-array name="theatre_tags">
+                <item>Drama</item>
+                <item>Musical</item>
+                <item>Comedy</item>
+                <item>Tragedy</item>
+                <item>Improvisation</item>
+        </string-array>
+
+        <string-array name="cinema_tags">
+                <item>Spy film</item>
+                <item>Action thriller</item>
+                <item>Superhero film</item>
+                <item>Comedy of manners</item>
+                <item>Black comedy</item>
+                <item>Comedy horror</item>
+                <item>Romantic comedy film</item>
+                <item>Teen movie</item>
+                <item>Crime drama</item>
+                <item>Historical drama</item>
+                <item>Docudrama</item>
+                <item>Legal drama</item>
+                <item>Psychodrama</item>
+                <item>Comedy drama</item>
+                <item>Melodrama</item>
+                <item>Tragedy</item>
+                <item>Docufiction</item>
+        </string-array>
+
+        <string-array name="foodanddrink_tags">
+                <item>Fast Food</item>
+                <item>Restaurant</item>
+                <item>
+Steackhouse
+                </item>
+                <item>Happy Hour</item>
+                <item>Cocktail</item>
+                <item>Beer</item>
+                <item>Wine</item>
+                <item>
+Hamburger
+                </item>
+                <item>Pizza</item>
+                <item>Italian Food</item>
+                <item>Chinese Food</item>
+                <item>Japan Food
+                </item>
+                <item>Mexican Food</item>
+                <item>Greek Food</item>
+                <item>Indian Food</item>
+        </string-array>
+
+        <string-array name="livemusic_tags">
+                <item>Cover Band</item>
+                <item>Live Albums</item>
+                <item>Live
+Singles
+                </item>
+                <item>Concerts</item>
+                <item>Music Festivals</item>
+                <item>Live Coding</item>
+                <item>Music Venues
+                </item>
+        </string-array>
+
+        <string-array name="outdoor_tags">
+                <item>Charity Fundraiser</item>
+                <item>Food</item>
+                <item>Beverage
+                </item>
+                <item>Golf</item>
+                <item>Concert</item>
+                <item>Auction</item>
+                <item>Awards</item>
+                <item>Cabaret
+                </item>
+                <item>Car Boot Sale</item>
+                <item>Celebration</item>
+                <item>Conference</item>
+                <item>Convention
+                </item>
+                <item>Flash Mob</item>
+                <item>Party</item>
+        </string-array>
+
+        <string-array name="festival_tags">
+                <item>Music</item>
+                <item>Cinema</item>
+                <item>Literature
+                </item>
+                <item>Theatre</item>
+                <item>Art</item>
+                <item>Religion</item>
+                <item>Food and Drink</item>
+                <item>
+Beer
+                </item>
+                <item>Seasonal Festival</item>
+                <item>Hippy</item>
+        </string-array>
+
+        <string-array name="disco_tags">
+                <item>Dance</item>
+                <item>Latino</item>
+                <item>House</item>
+                <item>Dub
+                </item>
+                <item>Progressive</item>
+                <item>Hardcore</item>
+                <item>DJ</item>
+                <item>Vip</item>
+                <item>Special
+Guest
+                </item>
+                <item>Dance Floor</item>
+                <item>Cocktail</item>
+        </string-array>
+
+        <string-array name="museum_tags">
+                <item>Archaeology</item>
+                <item>Anthropology</item>
+                <item>Ethnology
+                </item>
+                <item>Military history</item>
+                <item>Cultural history</item>
+                <item>Science</item>
+                <item>
+Technology
+                </item>
+                <item>Children\'s museums</item>
+                <item>Natural history</item>
+                <item>Numismatics</item>
+                <item>
+Botanical gardens
+                </item>
+                <item>Zoological gardens</item>
+                <item>Philately
+                </item>
+        </string-array>
+
+
+
+
+</resources>

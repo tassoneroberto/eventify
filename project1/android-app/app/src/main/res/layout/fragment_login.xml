@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_content" android:layout_width="match_parent" android:layout_height="fill_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/lll" android:layout_marginBottom="5dp" android:layout_marginLeft="40dp" android:layout_marginRight="40dp" android:layout_marginTop="@dimen/margin_top_down_layout">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:layout_weight="1" android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginTop="@dimen/margin_top_down_component">
+
+                <EditText android:id="@+id/et_email" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_email_black_24dp" android:hint="Email" android:inputType="textEmailAddress" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginTop="@dimen/margin_top_down_component">
+
+                <EditText android:id="@+id/et_password" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_key_variant_black_24dp" android:hint="Password" android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button android:id="@+id/btn_login" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:textColor="@color/white" android:textSize="14sp" android:text="LOGIN"/>
+
+
+            <TextView android:id="@+id/tv_or" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginTop="@dimen/margin_top_down_component" android:text="or" android:textAlignment="center" android:textColor="@color/colorAccent" />
+
+
+            <com.facebook.login.widget.LoginButton android:id="@+id/face" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1" android:textAlignment="center" app:roundedCornerRadius="75dp" />
+
+            <com.twitter.sdk.android.core.identity.TwitterLoginButton android:id="@+id/twitterLogin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="center_vertical" />
+
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginTop="@dimen/margin_top_down_component" android:gravity="center" android:orientation="horizontal">
+
+                <com.shaishavgandhi.loginbuttons.FacebookButton android:id="@+id/login_face" android:layout_width="75dp" android:layout_height="75dp" android:layout_marginLeft="@dimen/margin_right_left_cardList" android:layout_marginRight="@dimen/margin_right_left_cardList" app:iconSize="30dp" app:roundedCorner="true" app:roundedCornerRadius="75dp" />
+
+                <com.shaishavgandhi.loginbuttons.TwitterButton android:id="@+id/login_twitter" android:layout_width="75dp" android:layout_height="75dp" android:layout_marginLeft="@dimen/margin_right_left_cardList" android:layout_marginRight="@dimen/margin_right_left_cardList" app:iconSize="30dp" app:roundedCorner="true" app:roundedCornerRadius="75dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout android:id="@id/lll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginLeft="40dp" android:layout_marginRight="40dp" android:layout_marginTop="@dimen/margin_top_down_component" android:orientation="vertical">
+
+
+
+        <TextView android:id="@+id/tv_register_user" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_top_down_component" android:layout_marginTop="1dp" android:text="Not registered? Register an account now!" android:textAlignment="center" android:textColor="@color/colorAccent" />
+
+        <androidx.appcompat.widget.AppCompatButton android:id="@+id/btn_register_user" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="1dp" android:layout_marginTop="@dimen/margin_top_down_component" android:background="@color/colorPrimary" android:text="REGISTER AS USER" android:textColor="@android:color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton android:id="@+id/btn_register_organizer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="1dp" android:layout_marginTop="@dimen/margin_top_down_component" android:background="@color/colorPrimary" android:text="REGISTER AS ORGANIZER" android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:fitsSystemWindows="true" tools:context=".MainActivity">
+
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:src="@drawable/background" />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" tools:context=".MainActivity" android:orientation="vertical">
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/tv_eventify" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="top" android:layout_marginBottom="@dimen/margin_top_down_layout" android:layout_marginTop="@dimen/margin_top_down_layout" android:onClick="showIntro" android:text="@string/app_name" android:textAlignment="center" android:textAllCaps="false" android:textColor="@color/colorAccent" android:textSize="70dp" android:textStyle="bold|italic" />
+
+
+        <FrameLayout android:id="@+id/fragment_frame" android:layout_width="match_parent" android:layout_height="match_parent"/>
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
