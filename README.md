@@ -44,3 +44,8 @@ Project2 is composed by a JavaEE backend and an Angular frontend.
 ### Angular frontend
 
 //TODO: add screens
+
+## Authors
+
+Co-authored with:
+[Antonio Rachele](https://github.com/racheleantonio)
